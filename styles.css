@@ -57,13 +57,17 @@ nav img {
   margin-right: 1rem;
 }
 
-/* nav ul {
-  margin-righ: 1rem;
-} */
+nav ul {
+  margin-right: 1rem;
+}
 
 nav li {
   display: inline;
   padding: 0 1rem;
+}
+
+.truncated-menu {
+  display: none;
 }
 
 header .flex {
@@ -84,13 +88,70 @@ h1 {
   line-height: 1.2;
 }
 
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 22rem;
+    padding-top: 0;
+  }
 
+  nav.container {
+    max-width: 100%;
+  }
+
+  .main-banner {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .main-banner h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .menu ul {
+    display: none;
+  }
+
+  .menu ul.truncated-menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  header div span {
+    display: none;
+  }
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+  .main-banner {
+    width: 100%;
+    padding: 1rem 0;
+    margin: 9rem auto 0 auto;
+    text-align: center;
+  }
+  .main-banner h1 {
+    font-size: 1rem;
+  }
+}
 
 /* Supporting Section Styles */
 
 .supporting {
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 560px) {
+  .supporting {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 3.77rem 0;
+  }
 }
 
 .service {
@@ -102,6 +163,14 @@ h1 {
   height: 8rem;
   margin: 3rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 560px) {
+  .service {
+    height: auto;
+    margin: 0.77rem;
+    font-size: 0.77rem;
+  }
 }
 
 .service img {
@@ -133,6 +202,24 @@ h1 {
   background-color: cadetblue;
 }
 
+@media only screen and (max-width: 560px) {
+  .info {
+    width: 100%;
+  }
+
+  .info .title {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .info p {
+    padding: 1rem;
+    font-size: 0.77rem;
+  }
+}
+
 /* Footer Styles */
 
 .footer {
@@ -146,4 +233,14 @@ footer img {
   height: 1.5rem;
   margin-right: 1rem;
   height: 1.5rem;
+}
+
+@media only screen and (max-width: 560px) {
+  footer {
+    justify-content: center;
+  }
+
+  footer div {
+    display: none;
+  }
 }
