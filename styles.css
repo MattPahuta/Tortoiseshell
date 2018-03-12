@@ -28,15 +28,90 @@ body {
 
 /* Header Styles */
 
-.hero-banner {
-  background: url("./img/glasses-bg.png");
+header {
   height: 30rem;
+  padding-top: 1rem;
+  background: url("./img/glasses-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  background-color: cadetblue;
+  color: white;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+/* nav ul {
+  margin-righ: 1rem;
+} */
+
+nav li {
+  display: inline;
+  padding: 0 1rem;
+}
+
+header .flex {
+  justify-content: flex-end;
+}
+
+.main-banner {
+  display: inline-block;
+  background-color: white;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  padding: 1.5rem 5rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+
+
 /* Supporting Section Styles */
 
+.supporting {
+  display: flex;
+  justify-content: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+  text-align: center;
+}
+
+.service img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.service img.paper-icon {
+  width: 3.5rem;
+}
 
 /* Info Section Styles */
 
